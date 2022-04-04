@@ -13,10 +13,10 @@ radio.setGroup(86)
 music.playMelody("E B C5 A B G A F ", 120)
 basic.showString("hola")
 basic.forever(function () {
-    if (input.rotation(Rotation.Roll) > 70) {
+    if (input.rotation(Rotation.Roll) > 50) {
         radio.sendNumber(3)
     }
-    if (input.rotation(Rotation.Roll) < -70) {
+    if (input.rotation(Rotation.Roll) < -50) {
         radio.sendNumber(4)
     }
 })
